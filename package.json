@@ -1,7 +1,7 @@
 {
   "name": "@bugbearr/escapejsstring",
   "description": "Escape JavaScript string",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "browserslist": [
     "ie 11",
     "maintained node versions"
@@ -43,8 +43,8 @@
     "clean:min": "rimraf min",
     "clean:umd": "rimraf umd",
     "test": "jest",
-    "prepublish": "run-s test build",
+    "prepublishOnly": "run-s test build",
     "postversion": "git push --follow-tags"
   },
-  "unpkg": "min/index.min.js"
+  "unpkg": "min/index.js"
 }
