@@ -1,7 +1,7 @@
 {
-  "name": "@bugbearr/lib-tmpl",
-  "description": "Template for node library",
-  "version": "0.0.1",
+  "name": "@bugbearr/escapejsstring",
+  "description": "Escape JavaScript string",
+  "version": "1.0.0",
   "browserslist": [
     "ie 11",
     "maintained node versions"
@@ -34,7 +34,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "github:bugbearr/node-lib-tmpl",
+  "repository": "github:bugbearr/escapeJsString-js",
   "scripts": {
     "build": "run-s clean:umd build:umd clean:min build:min",
     "build:min": "cross-env NODE_ENV=production babel esm --out-dir min",
