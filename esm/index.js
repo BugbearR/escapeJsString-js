@@ -1,4 +1,9 @@
 /**
+ * Escape JavaScript string
+ * @license CC0-1.0
+ * @version 1.0.0
+ */
+/**
  * Map for escape characters.
  */
 const JS_ESCAPES = {
