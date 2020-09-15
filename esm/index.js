@@ -1,7 +1,7 @@
 /**
  * Escape JavaScript string
  * @license CC0-1.0
- * @version 1.0.0
+ * @version 1.0.4
  */
 /**
  * Map for escape characters.
@@ -61,7 +61,7 @@ const JS_ESCAPES = {
  * @param {string} c character
  * @returns {string} escaped character
  */
-function excapeJsChar(c) {
+function escapeJsChar(c) {
     return JS_ESCAPES[c];
 }
 
@@ -72,5 +72,5 @@ function excapeJsChar(c) {
  */
 export default function escapeJsString(s) {
     // eslint-disable-next-line no-control-regex
-    return s.replace(/[\x00-\x1f"$&'\-<>\[\\\]`\x7f\u2028\u2029]/g, excapeJsChar);
+    return s.replace(/[\x00-\x1f"$&'\-<>\[\\\]`\x7f\u2028\u2029]/g, escapeJsChar);
 }
