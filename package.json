@@ -1,7 +1,7 @@
 {
   "name": "@bugbearr/escapejsstring",
   "description": "Escape JavaScript string",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "browserslist": [
     "ie 11",
     "maintained node versions"
