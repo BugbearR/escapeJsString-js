@@ -6,7 +6,7 @@
 /**
  * Map for escape characters.
  */
-const JS_ESCAPES = {
+const JS_ESCAPES: {[index: string]: string} = {
     "\x00": "\\u0000",
     "\x01": "\\u0001",
     "\x02": "\\u0002",
@@ -61,7 +61,7 @@ const JS_ESCAPES = {
  * @param {string} c character
  * @returns {string} escaped character
  */
-function escapeJsChar(c) {
+function escapeJsChar(c: string): string {
     return JS_ESCAPES[c];
 }
 
@@ -70,7 +70,7 @@ function escapeJsChar(c) {
  * @param {string} s string
  * @returns {string} escaped string
  */
-export default function escapeJsString(s) {
+export default function escapeJsString(s: string): string {
     // eslint-disable-next-line no-control-regex
     return s.replace(/[\x00-\x1f"$&'\-<>\[\\\]`\x7f\u2028\u2029]/g, escapeJsChar);
 }

@@ -1,4 +1,5 @@
-import escapeJsString from "../esm/index";
+import escapeJsString from "../src/index";
+import { expect, test } from '@jest/globals';
 
 test("Hello, world!", () => {
     expect(escapeJsString("\"<Hello,\r\n world!>\"\r\n")).toBe("\\u0022\\u003cHello,\\r\\n world!\\u003e\\u0022\\r\\n");
